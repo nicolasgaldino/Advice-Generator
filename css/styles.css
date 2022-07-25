@@ -1,0 +1,15 @@
+:root {
+  --lightCyan: #cee3e9;
+  --neonGreen: #52ffa8;
+  --darkBlue: #1f2632;
+  --darkGrayishBlue: #323a49;
+  --grayishBlue: #4e5d73;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
