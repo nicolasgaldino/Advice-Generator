@@ -13,7 +13,7 @@ const fetchAdviceAPI = async () => {
 
 const renderAdvice = async () => {
   const renderAdviceResponse = await fetchAdviceAPI();
-  adviceParagraph.innerHTML = renderAdviceResponse.slip.advice;
+  adviceParagraph.innerHTML = '"' + renderAdviceResponse.slip.advice + '"';
   adviceId.innerHTML = "#" + renderAdviceResponse.slip.id;
 };
 
