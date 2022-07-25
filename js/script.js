@@ -1,4 +1,3 @@
-const adviceTitle = document.querySelector(".adviceTitle");
 const adviceId = document.querySelector(".adviceId");
 const adviceParagraph = document.querySelector(".adviceParagraph");
 const diceBtn = document.querySelector(".diceBtn");
@@ -15,6 +14,15 @@ const fetchAdviceAPI = async () => {
 const renderAdvice = async () => {
   const renderAdviceResponse = await fetchAdviceAPI();
   adviceParagraph.innerHTML = renderAdviceResponse.slip.advice;
+  adviceId.innerHTML = "#" + renderAdviceResponse.slip.id;
 };
 
-renderAdvice()
+window.onload = () => {
+  renderAdvice();
+};
+
+const handleAdvice = () => {
+  renderAdvice();
+};
+
+diceBtn.addEventListener("click", handleAdvice);
