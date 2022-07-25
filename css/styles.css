@@ -71,7 +71,7 @@ body {
   background-color: var(--neonGreen);
 }
 
-.diceImg {
+.diceBtn {
   display: block;
   width: 1.875rem;
 }
