@@ -4,6 +4,7 @@
   --darkBlue: #1f2632;
   --darkGrayishBlue: #323a49;
   --grayishBlue: #4e5d73;
+  --boxShadow: #000000a3;
 }
 
 * {
@@ -14,14 +15,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mainContainer {}
+body {
+  background-color: var(--darkBlue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.boxContent {}
+.boxContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  padding: 3.125rem;
+  border-radius: 0.625rem;
+  background-color: var(--darkGrayishBlue);
+  box-shadow: 0.3125rem 0.3125rem 1.875rem 0.625rem var(--boxShadow);
+  color: white;
+}
 
-.adviceTitle {}
+.adviceTitle {
+  display: flex;
+  font-weight: 500;
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
+}
 
-.adviceParagraph {}
+.adviceId {
+  margin-left: 0.625rem;
+}
 
-.dividerImg {}
+.adviceParagraph {
+  width: 37.5rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.0625rem;
+}
 
-.diceImg {}
+.dividerImg {
+  width: 37.5rem;
+  margin: 1.875rem 0 1.875rem 0;
+}
+
+.diceSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+}
+
+.diceImg {
+  display: block;
+  width: 1.875rem;
+}
