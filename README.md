@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice generator app
+# Frontend Mentor - <a href="https://nicolasgaldino.github.io/Advice-Generator/" target="_blank">Advice generator app</a>
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-design.jpg)
 
