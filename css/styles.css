@@ -79,10 +79,6 @@ body {
   bottom: -8%;
 }
 
-.diceSpan:hover {
-  filter: blur(2px) brightness(300%);
-}
-
 .diceBtn {
   display: block;
   width: 1.875rem;
